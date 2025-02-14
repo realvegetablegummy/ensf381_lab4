@@ -33,9 +33,25 @@ Sabrina Li - 30173044
         console.log(string2.replace("fun", "awesome"))
         // NOTE: strings arent modified, string1 and string 2 still print out original values
 
+        // STRING TEMPLATES ----------------
+        name = "Alice"
+        age = 25
 
+        greeting = `My name is ${name} and I am ${age} years old`
+
+        console.log(greeting)
+
+        // WORKING WITH DATES ------------
+        date = new Date()
+
+        console.log(date)
+
+        console.log(date.getFullYear())
+        console.log(date.getMonth() + 1) // NOTE: months are zero-indexed
+        console.log(date.getDay()) // NOTE: monday is 1, sunday is 0
         
-
+        weekdays = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"]
+        console.log(weekdays[date.getDay()])
     </script>
 </body>
 </html>
