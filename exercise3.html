@@ -8,27 +8,63 @@ Sabrina Li - 30173044
 -->
 
 <!DOCTYPE html>
-
 <html>
-<head>
-    <title>Lab4 - Exercise 3</title>
-</head>
-<body>
-    <script>
-        // ARRAYS AND BASIC METHODS ---------------
-        let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"];
+    <head>
+        <title>Lab4 - Exercise 3</title>
+    </head>
+    <body>
+        <h1>JavaScript Lab</h1>
+        <script>
+            let classRoster = ["Alice", "Tom", "Charlie", "Diana", "Evan"];
 
-        console.log(classRoster.toString());
-        console.log(classRoster);
+            console.log(classRoster.toString());
+            console.log(classRoster);
 
-        classRoster.push("Fiona", "Nancy"); // NOTE: .push() returns length of new array
-        console.log(classRoster);
+            classRoster.push("Fiona", "Nancy"); // NOTE: .push() returns length of new array
+            console.log(classRoster);
 
-        classRoster.shift(); // NOTE: .shift() returns first element
-        console.log(classRoster);
+            classRoster.shift(); // NOTE: .shift() returns first element
+            console.log(classRoster);
 
-        console.log(classRoster.length)
+            console.log(classRoster.length);
 
-    </script>
-</body>
+            let classInfo = {
+                className: 'ENSF381: Full-Stack Web Development',
+                instructor: 'Dr. Smith',
+                schedule: ['Monday', 'Wednesday', 'Friday'],
+                students: classRoster,
+                details: {
+                    semester: 'Winter',
+                    year: 2025
+                }
+            }
+
+            classInfo.instructor = 'Dr.Deb';
+            console.log(classInfo.className);
+            console.log(classInfo.instructor);
+            console.log(classInfo.students);
+            console.log(classInfo.details.semester);
+            console.log(classInfo);
+
+            let className2 = classInfo.className;
+            let students2 = classInfo.students;
+            console.log(className2);
+            console.log(students2);
+
+            let semester2 = classInfo.details.semester;
+            let year2 = classInfo.details.year;
+            console.log(semester2);
+            console.log(year2);
+
+            let student1 = classRoster.shift();
+            console.log(student1);
+            let student2 = classRoster.shift();
+            console.log(student2);
+
+            let remainingStudents = classRoster;
+            console.log(remainingStudents);
+            
+
+        </script>
+    </body>
 </html>
